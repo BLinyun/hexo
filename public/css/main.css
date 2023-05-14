@@ -1,0 +1,295 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	background: 	#F5F5F5;
+}
+
+.banner{
+	width: 100%;
+	height: 860px;
+	overflow: hidden;
+	background: url(../img/main3.jpg) no-repeat center top;
+}
+#text{
+	width: 100%;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 45px;
+	color: #f7f7f7;
+	font-weight:lighter;
+	display: block;
+}
+
+.solid{
+	width: 60%;
+	margin: auto;
+	border-top: 1px solid #CCCCCC;
+}
+.solid li{
+	list-style: none;
+	width: 20%;
+	float: left;
+	margin-top: 12px;
+	text-align: center;
+	margin-left: 3%;
+	
+}
+.solid a{
+	font-size:15px;
+	text-decoration: none;
+	color: #DDDDDD;
+}
+.solid a:hover{
+	color: white;
+}
+.solid span{
+	display: block;
+	font-size: 13px;
+}
+#code{
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	margin-top: 220px;
+	color: #DDDDDD;
+	font-size: 30px;
+}
+#bottom{
+	width: 50px;
+	margin: auto;
+	margin-top:200px ;
+	display: block;
+}
+.skill{
+	width: 1200px;
+	height: 400px;
+	margin: auto;
+	margin-top: 200px;
+	
+}
+.box{
+	text-align: center;
+	width: 300px;
+	height: 220px;
+	text-align: center;
+	position: relative;
+	
+	display: inline-block;/*让盒子不再垂直排列*/
+    vertical-align: top;
+	margin-left: 75px;
+	
+}
+.box img{
+	width: 50px;
+	display: block;
+	margin: auto;
+	
+}
+
+.box:hover{
+	
+}
+.h1{
+	display: block;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #555555;
+}
+.text{
+	width: 200px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #999999;
+}
+
+
+.about{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	text-align: center;
+	background: #FFFFFF;
+}
+.about_t{
+	width: 395px;
+	height: 499.1px;
+	margin-top:50px ;
+	display: inline-block;
+	margin-right: 10px;
+}
+#h1{
+	width: 395px;
+	height: 499.1px;
+	top:150px;
+	text-align: left;
+	font-size: 45px;
+	left:1000px;
+	color: #666666;
+	position: absolute;
+}
+#h1 p{
+	color: #777777;
+	font-size: 16px;
+}
+#h2{
+	width: 395px;
+	text-align: left;
+	position: absolute;
+	top:200px;
+	color: #777777;
+	left:1000px;
+}
+
+.about_1{
+	width: 100%;
+	height: 600px;
+	text-align: center;
+}
+.h3{
+	display: block;
+	color: #555555;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-top: 80px;
+	text-align: center;
+	
+}
+.h3::before{
+    content: "—— ";
+    color: #3C3C3C;
+}
+.h3::after{
+    content: " ——";
+    color: #3C3C3C;
+}
+.h4{
+	display: block;
+	font-size: 20px;
+	margin-top: 35px;
+	color: #555555;
+	letter-spacing:4px;
+}
+.about_1 p{
+	font-size: 15px;
+	color: #666666;
+	font-weight: lighter;
+}
+.button{
+	width: 200px;
+	height: 60px;
+	margin: auto;
+	margin-top: 40px;
+	font-size: 14px;
+	line-height: 60px;
+	border: 1px solid #555555;
+}
+.button:hover{
+	background: #000;
+	color: #FFF;
+}
+.img{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	background: url(../img/ft-visualarea.jpg) no-repeat center top;
+}
+.h5{
+	text-align: center;
+	color: #F5F5F5;
+	font-weight: lighter;
+	margin-top: 220px;
+	width: 100%;
+	height: 300px;
+}
+.foot{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	text-align:center;
+	background: #FFFFFF;
+}
+.foot a{
+	color: #777777;
+	text-decoration: none;
+}
+.foot p{
+	font-size: 15px;
+	font-weight: lighter;
+	margin-top: 60px;
+	color: #777777;
+
+}
+
+
+
+@media screen and (max-width:1400px){
+	.skill{width:100%;
+		text-align:center;
+		margin-top: 100px;
+		}
+	.box{
+		margin-left: 0px;
+		margin: 10px;}
+		
+	#h1,#h2{
+		left: 900px;
+	}
+}
+
+
+
+@media screen and (max-width:600px){
+	.skill{width:100%;
+		text-align:center;
+		margin-top: 100px;
+		}
+	.box{
+		margin-left: 0px;
+		margin: 10px;}
+		
+	#h1,#h2{
+		width: 100%;
+		
+		position:  initial;
+		margin-top: 600px;
+		margin: auto;
+	}
+	.banner{
+		height: 600px;
+	}
+	#text,.about_t{
+		width: 100%;
+		/*在PC端有右边距为10px*/
+		margin-right: 0px;
+		
+	}
+	.solid{
+		display: none;
+	}
+	#code{
+		margin-top: 100px;
+		font-size: 18px;
+	}
+	#bottom{
+		display: none;
+	}
+	.about img{
+		width: 100%;
+	}
+	.skill{
+		margin-top: 30px;
+		height: 660px;
+	}
+	.about{
+		height: 1400px;
+		margin-bottom: 0px;
+
+		
+	}
+
+}
